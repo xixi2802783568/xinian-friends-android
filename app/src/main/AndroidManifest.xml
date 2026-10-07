@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.xinian.friends" android:versionCode="7" android:versionName="0.2.3">
+    <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="35" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:label="惜的朋友版" android:icon="@mipmap/launcher" android:theme="@style/AppTheme" android:allowBackup="false" android:usesCleartextTraffic="false" android:supportsRtl="true">
+        <activity android:name="cn.xinian.app.MainActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden" android:windowSoftInputMode="adjustResize">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+            <intent-filter><action android:name="android.intent.action.SEND" /><category android:name="android.intent.category.DEFAULT" /><data android:mimeType="text/plain" /></intent-filter>
+        </activity>
+    </application>
+</manifest>
